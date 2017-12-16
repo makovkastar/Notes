@@ -1,0 +1,20 @@
+<FindBugsFilter>
+
+    <!-- Do not check auto-generated resources classes -->
+    <Match>
+        <Class name="~.*R\$.*" />
+    </Match>
+
+    <!-- Do not check auto-generated manifest classes -->
+    <Match>
+        <Class name="~.*Manifest\$.*" />
+    </Match>
+
+    <!-- Do not check the ignored exception -->
+    <Match>
+        <Class name="net.sharewire.ggd.utils.IOUtils" />
+        <Method name="closeQuietly" />
+        <Bug pattern="DE_MIGHT_IGNORE" />
+    </Match>
+
+</FindBugsFilter>

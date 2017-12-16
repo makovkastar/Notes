@@ -1,0 +1,59 @@
+plugins.apply('findbugs')
+
+task findbugs(type: FindBugs) {
+    ignoreFailures = false
+    effort = 'max'
+    reportLevel = 'high' // Report only high priority problems.
+
+    classes = files("${project.projectDir}/build/intermediates/classes")
+    source = fileTree('src/main/java')
+
+    classpath = files()
+
+    reports {
+        xml.enabled = true
+        html.enabled = false
+    }
+
+    excludeFilter = rootProject.file('quality/findbugs.xml')
+}
+
+plugins.apply('pmd')
+
+pmd {
+    toolVersion = '5.5.3'
+}
+
+task pmd(type: Pmd) {
+    ignoreFailures = false
+    rulePriority = 2 // Change highly recommended. Behavior is quite likely to be broken/buggy.
+
+    source = fileTree('src/main/java')
+
+    ruleSetFiles = rootProject.files('quality/pmd.xml')
+}
+
+plugins.apply('checkstyle')
+
+task checkstyle(type: Checkstyle) {
+    ignoreFailures = false
+    showViolations = true
+
+    source = 'src'
+    include '**/*.java'
+
+    classpath = files()
+
+    configFile rootProject.file('quality/checkstyle.xml')
+}
+
+plugins.apply('cpd')
+
+cpdCheck {
+    reports {
+        text.enabled = true
+        xml.enabled = false
+    }
+    minimumTokenCount = 100
+    source = fileTree('src/main/java')
+}
