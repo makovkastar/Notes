@@ -6,6 +6,10 @@ apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 27
 
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
     defaultConfig {
         applicationId "com.melnykov.notes"
 
