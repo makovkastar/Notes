@@ -7,8 +7,12 @@ android:
   - build-tools-26.0.2
   - android-27
 
-script: ./gradlew build
-
 branches:
   only:
   - master
+
+script:
+  - ./gradlew build
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
