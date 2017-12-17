@@ -33,4 +33,30 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_empty_notes" />
 
+    <View
+        android:id="@+id/view_shadow_top"
+        android:layout_width="0dp"
+        android:layout_height="8dp"
+        android:background="@drawable/bg_shadow_top"
+        app:layout_constraintBottom_toTopOf="@+id/text_take_note"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/text_take_note"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:fontFamily="@font/roboto_slab_regular"
+        android:foreground="?selectableItemBackground"
+        android:gravity="start|center_vertical"
+        android:paddingStart="@dimen/spacing_medium"
+        android:text="@string/hint_take_note"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColor="@color/text_hint_dark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="RtlSymmetry" />
+
 </android.support.constraint.ConstraintLayout>

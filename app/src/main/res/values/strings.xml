@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Notes</string>
     <string name="empty_notes">Notes you add appear here</string>
+    <string name="hint_take_note">Take a note…</string>
+    <string name="menu_item_search">Search</string>
+    <string name="menu_single_column_view">Single-column view</string>
 </resources>

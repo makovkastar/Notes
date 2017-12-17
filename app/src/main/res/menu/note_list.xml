@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/item_search"
+        android:icon="@drawable/ic_search_white_24dp"
+        android:title="@string/menu_item_search"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/item_view_mode"
+        android:icon="@drawable/ic_view_stream_white_24dp"
+        android:title="@string/menu_single_column_view"
+        app:showAsAction="ifRoom" />
+</menu>
