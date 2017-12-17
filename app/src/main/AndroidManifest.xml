@@ -13,8 +13,8 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".ui.list.NoteListActivity"
-            android:theme="@style/NoteListTheme">
+            android:name=".ui.browse.BrowseActivity"
+            android:theme="@style/BrowseTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,7 +23,7 @@
         </activity>
 
         <activity
-            android:name=".ui.details.NoteDetailsActivity"
+            android:name=".ui.edit.EditNoteActivity"
             android:windowSoftInputMode="stateVisible" />
 
         <activity

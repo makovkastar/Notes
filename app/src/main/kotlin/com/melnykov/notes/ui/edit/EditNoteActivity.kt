@@ -1,15 +1,15 @@
-package com.melnykov.notes.ui.details
+package com.melnykov.notes.ui.edit
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.view.MenuItem
 import com.melnykov.notes.R
 
-class NoteDetailsActivity : AppCompatActivity() {
+class EditNoteActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_note_details)
+        setContentView(R.layout.activity_edit_note)
 
         supportActionBar?.let {
             it.setDisplayHomeAsUpEnabled(true)

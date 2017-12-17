@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/alabaster"
-    tools:context="com.melnykov.notes.ui.details.NoteDetailsActivity">
+    tools:context="com.melnykov.notes.ui.edit.EditNoteActivity">
 
     <EditText
         android:id="@+id/text_title"

@@ -9,7 +9,7 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="NoteListTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="BrowseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/primary</item>
         <item name="colorPrimaryDark">@color/primary_dark</item>
         <item name="android:windowBackground">@color/mercury</item>
