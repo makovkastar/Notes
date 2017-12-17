@@ -6,4 +6,5 @@
     <string name="menu_single_column_view">Single-column view</string>
     <string name="hint_title">Title</string>
     <string name="hint_note">Note</string>
+    <string name="hint_search">Search notes</string>
 </resources>

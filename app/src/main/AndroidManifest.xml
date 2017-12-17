@@ -12,7 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".ui.list.NoteListActivity">
+        <activity
+            android:name=".ui.list.NoteListActivity"
+            android:theme="@style/NoteListTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -24,7 +26,10 @@
             android:name=".ui.details.NoteDetailsActivity"
             android:windowSoftInputMode="stateVisible" />
 
-        <activity android:name=".ui.search.SearchActivity" />
+        <activity
+            android:name=".ui.search.SearchActivity"
+            android:theme="@style/SearchTheme"
+            android:windowSoftInputMode="stateVisible" />
 
     </application>
 

@@ -8,6 +8,10 @@
     <color name="text_secondary_dark">#89000000</color>
     <color name="text_hint_dark">#60000000</color>
 
+    <color name="text_primary_light">#FFFFFFFF</color>
+    <color name="text_secondary_light">#B3FFFFFF</color>
+    <color name="text_hint_light">#80FFFFFF</color>
+
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="selective_yellow">#FFBB00</color>
