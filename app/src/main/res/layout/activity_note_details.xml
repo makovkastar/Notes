@@ -5,6 +5,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/alabaster"
     tools:context="com.melnykov.notes.ui.details.NoteDetailsActivity">
+
+    <EditText
+        android:id="@+id/text_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/spacing_big"
+        android:layout_marginStart="@dimen/spacing_big"
+        android:layout_marginTop="@dimen/spacing_big"
+        android:background="@null"
+        android:fontFamily="sans-serif-condensed"
+        android:hint="@string/hint_title"
+        android:inputType="textCapSentences"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+        android:textColorHint="@color/text_hint_dark"
+        android:textCursorDrawable="@drawable/bg_text_cursor"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text_note"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:background="@null"
+        android:fontFamily="@font/roboto_slab_regular"
+        android:gravity="start"
+        android:hint="@string/hint_note"
+        android:inputType="textCapSentences|textMultiLine"
+        android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+        android:textColorHint="@color/text_hint_dark"
+        android:textCursorDrawable="@drawable/bg_text_cursor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/text_title"
+        app:layout_constraintStart_toStartOf="@+id/text_title"
+        app:layout_constraintTop_toBottomOf="@+id/text_title">
+
+        <requestFocus />
+    </EditText>
 
 </android.support.constraint.ConstraintLayout>

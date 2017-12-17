@@ -2,15 +2,17 @@
 <resources>
     <color name="primary">@color/selective_yellow</color>
     <color name="primary_dark">@color/orange_peel</color>
-    <color name="accent">#FF4081</color>
+    <color name="accent">@color/black</color>
 
     <color name="text_primary_dark">#DD000000</color>
     <color name="text_secondary_dark">#89000000</color>
     <color name="text_hint_dark">#60000000</color>
 
+    <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
     <color name="selective_yellow">#FFBB00</color>
     <color name="orange_peel">#F79D00</color>
     <color name="mercury">#E6E6E6</color>
     <color name="alto">#CFCFCF</color>
+    <color name="alabaster">#FAFAFA</color>
 </resources>

@@ -20,7 +20,9 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ui.details.NoteDetailsActivity" />
+        <activity
+            android:name=".ui.details.NoteDetailsActivity"
+            android:windowSoftInputMode="stateVisible" />
 
         <activity android:name=".ui.search.SearchActivity" />
 
